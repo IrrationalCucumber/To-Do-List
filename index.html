@@ -13,7 +13,8 @@
         //window.print(); // print the current page
     }
     function addTask(){
-        document.write(todoList.title = "Title")
+        document.getElementById("list").innerHTML = (todoList.title = "Title")
+        window.alert("Task added: " + todoList.title);
     }
      </script>
 </head>
@@ -23,6 +24,7 @@
 
     <p id="demo">HEllow WOrlds</p>
     <button type="button" onclick="myFunction()">click</button>
+    <p id="list"></p>
     <button type="button" onclick="addTask()">Add Task</button>
 
 </body>
