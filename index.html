@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title> 
    <script>
+    x = " Javascript!";
+    /*
+    To-do
+    - Add more functionality to the To-Do List
+    - Implement a way to add, remove, and edit tasks
+    */
+    const list = {
+        title: "To-Do List", 
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." ,
+        dateAdded: "2023-10-01", 
+         deadline: "2023-10-31"};
     function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        document.getElementById("demo").innerHTML = "Hello"+ x ;
+        //document.write("Hello JavaScript!");
+        document.write(list.title + "<br>" + list.description + "<br>" + list.dateAdded + "<br>" + list.deadline);
+        //window.alert("Hello JavaScript!"); // response to button click
+        //window.print(); // print the current page
     }
      </script>
 </head>
 <body>
  
-    <h1>Hello World!     
-    </h1>
+    <h1>Hello World!</h1>
 
-    <p id="demo">TEST</p>
+    <p id="demo">HEllow WOrlds</p>
     <button type="button" onclick="myFunction()">click</button>
 
 </body>
