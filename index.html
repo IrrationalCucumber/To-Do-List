@@ -11,6 +11,7 @@
     - Add more functionality to the To-Do List
     - Implement a way to add, remove, and edit tasks
     */
+   const todoList = {}
     const list = {
         title: "To-Do List", 
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." ,
@@ -18,10 +19,13 @@
          deadline: "2023-10-31"};
     function myFunction() {
         document.getElementById("demo").innerHTML = "Hello"+ x ;
-        //document.write("Hello JavaScript!");
-        document.write(list.title + "<br>" + list.description + "<br>" + list.dateAdded + "<br>" + list.deadline);
+        
+        //document.write(list.title + "<br>" + list.description + "<br>" + list.dateAdded + "<br>" + list.deadline);
         //window.alert("Hello JavaScript!"); // response to button click
         //window.print(); // print the current page
+    }
+    function addTask(){
+        document.write(todoList.title = "Title")
     }
      </script>
 </head>
@@ -31,6 +35,7 @@
 
     <p id="demo">HEllow WOrlds</p>
     <button type="button" onclick="myFunction()">click</button>
+    <button type="button" onclick="addTask()">Add Task</button>
 
 </body>
 </html>
